@@ -16,6 +16,7 @@ class SecurityIncidentHandler:
             }]
         }
 
+  
         self.security_team = GroupChat(
             agents=list(self.agents.values()),
             messages=[],
@@ -39,7 +40,8 @@ Details: {incident_data.get('details')}
 
 Required Actions:
 1. NetworkMonitor: Analyze the security incident and provide initial assessment
-2. SecurityAdmin: Review findings and recommend specific actions
+2. MalwareAnalyst: Investigate associated processes and files for malicious indicator
+3. SecurityAdmin: Review findings and recommend specific actions
 
 Please proceed with the investigation."""
             
